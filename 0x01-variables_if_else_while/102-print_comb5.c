@@ -6,22 +6,19 @@
  */
 int main(void)
 {
-	int i, j;
+	int num;
 
-	for (i = 0; i <= 98; i++)
+	for (num = 0; num <= 9; num++)
 	{
-		for (j = i + 1; j <= 99; j++)
-		{
-		putchar((i / 10) + '0');
-		putchar((i % 10) + '0');
-		putchar(' ');
-		putchar((j / 10) + '0');
-		putchar((j % 10) + '0');
-		if (i == 98 || j == 99)
-		continue;
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+
 		putchar(',');
 		putchar(' ');
-		}
 	}
+
 	putchar('\n');
-return (0);
+
+	return (0);
+}
