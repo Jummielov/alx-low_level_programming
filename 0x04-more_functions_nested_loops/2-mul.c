@@ -4,7 +4,10 @@
  */
 void print_numbers(void)
 {
+	int _putchar(char i);
+
 	int i;
+
 	for (i = 0; i <= 9; i++)
 	{
 		_putchar(i + '0');
