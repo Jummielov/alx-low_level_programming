@@ -1,27 +1,17 @@
 #include <stdio.h>
 int main(void)
 {
-	long num = 612852475143;
 
-	long factor = 2;
+	long num = 612852475143, i;
 
-	long largest = 0;
-
-	while (num > 1)
+	for (i = 2; i <= num; i++)
 	{
-		if (num % factor == 0)
+		if (num % i == 0)
 		{
-			num /= factor;
-
-			largest = factor;
-
-		}
-		else
-		{
-			factor++;
-
+			num = num / i;
+			i--;
 		}
 	}
-	printf("%ld\n", largest);
+	printf("%lu\n", i);
 	return (0);
 }
