@@ -2,14 +2,13 @@
 /**
  * puts2 - prints every other character of a string,
  * starting with the \  first character, followed by a new line.
- * @str - string to be printed.
+ * @str: string to be printed.
  * Return: 0
  */
 void puts2(char *str)
 {
 	int count = 0;
 	int i;
-	char str;
 
 while (*str)
 {
@@ -21,7 +20,7 @@ str--;
 for (i = 0; i < count; i++)
 {
 	if (i % 2 == 0)
-		puts2(str[i]);
+		_putchar(str[i]);
 }
 _putchar('\n');
 }
