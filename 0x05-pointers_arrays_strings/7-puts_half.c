@@ -6,7 +6,7 @@
  */
 void puts_half(char *str)
 {
-	int _putchar();
+	int _putchar(void);
 	int count = 0;
 	int i;
 
