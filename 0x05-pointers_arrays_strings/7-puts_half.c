@@ -1,5 +1,5 @@
 /**
- * puts_half- prints second half of a given string.
+ * puts_half - prints second half of a given string.
  * starting with the \  first character, followed by a new line.
  * @str: string to be printed.
  * Return: 0
