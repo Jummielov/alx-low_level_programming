@@ -4,9 +4,13 @@
 #include "lists.h"
 
 /*
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ * @print_list: Print all the elements in a list
  * Return: the number of nodes
  */
-size_t print_list(const list_t *h)
+size_t print_list(const list_t *h);
 {
 
 	size_t s = 0;
