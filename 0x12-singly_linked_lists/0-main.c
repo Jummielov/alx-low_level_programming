@@ -13,7 +13,6 @@ int main(void)
     list_t *head;
     list_t *new;
     list_t hello = {"World", 5, NULL};
-    print_list;
     size_t n;
 
     head = &hello;
